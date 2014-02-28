@@ -34,15 +34,11 @@ module.exports = function(grunt) {
         }
       }
     },
-    git_deploy: {
-      your_target: {
-        options: {
-          url: 'git@github.com:vsbarba/dash2.git',
-          branch: 'gh-pages',
-          message: 'autocommit'
-        },
-        src: '.jekyll',
+    'gh-pages': {
+      options: {
+        base: '.jekyll'
       },
+      src: ['**']
     }
   });
 
@@ -50,7 +46,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-git-deploy');
+  grunt.loadNpmTasks('grunt-gh-pages');
 
   // Default task.
   // grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
