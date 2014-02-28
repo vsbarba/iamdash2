@@ -1,0 +1,28 @@
+# Website Info
+
+name: Your New Jekyll Site
+description: "La la la la"
+version: 0.0.1
+
+# Repository
+
+github: http://vsbarba.github.io/dash2
+
+# Format
+# -----------------------------------------------------------------------------
+markdown:     kramdown
+permalink:    none
+pygments:     false
+paginate:     5
+
+# Build Info
+# -----------------------------------------------------------------------------
+source:       app
+exclude:      ['.gitignore','*.sh', 'Gruntfile.js', 'package.json', 'bower.json', 'node_modules', 'bower_components']
+
+
+# Server
+host:         localhost
+port:         1234
+baseurl:      http://vsbarba.github.io/dash2
+destination:  .jekyll
