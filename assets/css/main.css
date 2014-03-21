@@ -27,11 +27,11 @@ body {
   color: white;
   text-align: center;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: auto 135%;
-  background-image: url("../img/party_hd.jpg");
+  background-size: cover;
+  background-image: url("../img/dasj2.png");
 }
 #landing .landing-vertical-inner {
   display: table-cell;
