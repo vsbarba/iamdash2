@@ -3,11 +3,18 @@
 /* Author Specific
 /*
 /*****************************************************************************/
+@font-face {
+  font-family: 'proxima-nova';
+  src: url('../fonts/prox/proxbold.eot');
+  src: url('../fonts/prox/proxbold.eot?#iefix') format('embedded-opentype'), url('../fonts/prox/proxbold.woff') format('woff'), url('../fonts/prox/proxbold.ttf') format('truetype'), url('../fonts/prox/proxbold.svg#proxima-nova') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 .color-it-red {
   color: #d2322d;
 }
 html {
-  font-family: "Capriola", "Helvetica Neue", "Times New Roman";
+  font-family: "proxima-nova", "Helvetica Neue", Tahoma, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -39,35 +46,45 @@ body {
   vertical-align: middle;
   text-align: center;
 }
-#landing .footer {
+#landing .center {
   width: 100%;
 }
-#landing .footer .title-container {
+#landing .center .title-container {
   background-color: #f1c40f;
 }
-#landing .footer .name-container {
+#landing .center .name-container {
   background-color: #e67e22;
 }
-#landing .footer .more-love {
+#landing .center .more-love {
   /*width: 100px;*/
-  height: 400px;
+  /*height: 400px;*/
   margin: auto;
   padding: 20px;
   /*background-color: #272727;*/
 }
-#landing .footer .more-love h1 {
+#landing .center .more-love h1 {
   font-size: 50px;
 }
-#landing .footer .more-love h2 {
+#landing .center .more-love h2 {
   font-size: 30px;
 }
-#landing .footer .more-love .fa {
+#landing .center .more-love .fa {
   font-size: 30px;
 }
 @include color-it-red();
-#landing .footer .more-love img {
-  height: 100%;
-  width: auto;
+#landing .center .more-love img {
+  height: auto;
+  width: 100%;
+  max-width: 350px;
+}
+#landing .footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+#landing .footer .text-content {
+  color: black;
+  font-size: 11px;
 }
 #photos {
   /* Prevent vertical gaps */
