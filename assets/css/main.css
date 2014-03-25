@@ -31,7 +31,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/dasj2.png");
+  background-image: url("../img/divshot_bg.jpg");
 }
 #landing .landing-vertical-inner {
   display: table-cell;
@@ -40,8 +40,6 @@ body {
   text-align: center;
 }
 #landing .footer {
-  position: absolute;
-  bottom: 40%;
   width: 100%;
 }
 #landing .footer .title-container {
@@ -52,7 +50,7 @@ body {
 }
 #landing .footer .more-love {
   /*width: 100px;*/
-  height: 120px;
+  height: 400px;
   margin: auto;
   padding: 20px;
   /*background-color: #272727;*/
@@ -67,6 +65,10 @@ body {
   font-size: 30px;
 }
 @include color-it-red();
+#landing .footer .more-love img {
+  height: 100%;
+  width: auto;
+}
 #photos {
   /* Prevent vertical gaps */
   line-height: 0;
